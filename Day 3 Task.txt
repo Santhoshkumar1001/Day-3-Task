@@ -1,0 +1,80 @@
+1. Create your own Resume data in JSON format ?
+
+var Resume = [
+    {
+        "name" : "santhosh",
+        "age" : "33",
+        "isRech" : "true",
+        "education" : "B.Tech",
+        "salary" : "15000",
+        "address" :[
+            {
+                "streetName" : "kulakkari Street",
+                "doorNumber" : "386"
+            },
+            {
+                "streetName" : "murugan Street",
+                "doorNumber" : "28"
+            },
+        ]
+},
+
+]
+
+//console.log(Resume[0].name);
+console.log(Resume[0].address[1].doorNumber);
+
+2.Window & Document Different ?
+
+The Window and Document Object are two of the Parent Objects that we can access with JavaScript. The document object itself is subordinate to the window object. I thing every this is a DOM Tree Structures.
+
+ The Window was already inbuilt the Chrome -> V8 Engine -> Console -> Window.
+
+The document inbuilt to the Window -> Document.
+
+JavaScript variable everything directly work with window Tree & any html relevant Tag work with Document Tree. Both are working each and every variable and Tag worked by DOM Tree Structure.
+
+Window Include to Address bar, Front and Back key, Reload key everything and document only for body structure only. 
+
+
+1.The window is at a root/top level at the JavaScript object hierarchy. It  is a global/root object in JavaScript and it is the root object of the Document object model(DOM);
+
+Syntax :
+
+Console -> Window
+
+2.A document is an object inside the window object and we use a document object for manipulation inside the document
+
+Syntax :
+
+Console -> Document 
+
+3.For the given JSON iterate over all for loop(for in) ?
+var person = {
+    "name" : "person 1",
+    "age" : "29",
+    "city" :" chennai",
+    "year" :"2013"
+    
+    }
+    
+    person.leaveday = ["Monday","Tusday","And Friday"];
+    
+    console.log(Object.keys(person));
+    var result = " ";
+    Object.keys(person).forEach(function(key){
+        result += person[key] + " - ";
+    })
+    
+    console.log(result);
+    
+    //for(var a in person)
+    //{
+     //   console.log(a,person[a]);
+    //}
+    //for(i=0;i<person.leaveday.length;i++)
+    //{
+    //    console.log(person.leaveday[i]); 
+    //}
+    //console.log(person);
+
